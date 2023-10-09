@@ -1,0 +1,65 @@
+body{
+    background-color: darkslategrey;
+    width: auto;
+}
+
+h1{
+    text-align: center;
+    /* 让文字居中 */
+    font-family: fantasy;
+    /* 字体设置 */
+    font-size: 75px;
+    /* 字体大小 */
+    
+
+}
+h4{
+    text-align: center;
+    margin-top: -50px;
+    /* 设置文字外边距 */
+    letter-spacing: 7px;
+    /* 设置文字的字间距 */
+}
+
+#introduce{
+    text-align: center;
+}
+#TOPimg{
+    text-align: center;
+    /* 让图片居中 */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* 隐藏图片的溢出部分 */
+}
+#TOPimg img {
+    max-width: 100%; /* 图片的最大宽度为 <div> 宽度的百分比 */
+    max-height: 100%; /* 图片的最大高度为 <div> 高度的百分比 */
+    height: auto; /* 使图片的高度自动适应宽度，以保持宽高比 */
+
+    /* ***************************设置一个图片渐入效果***************************** */
+    opacity: 0; /* 初始状态，元素不可见 */
+    transform: translateY(100px); /* 初始状态，元素向下平移 100px */
+    animation: fadeInUp 1s ease-in-out forwards, slideUp 1s ease-in-out forwards; /* 使用 fadeInUp 和 slideUp 动画 */
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0; /* 起始状态，元素透明度为 0 */
+      transform: translateY(100px); /* 起始状态，元素向下平移 100px */
+    }
+    100% {
+      opacity: 1; /* 结束状态，元素透明度为 1，完全显示 */
+      transform: translateY(0); /* 结束状态，元素向上平移 0，不平移 */
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100px); /* 起始状态，元素向下平移 100px */
+    }
+    100% {
+      transform: translateY(0); /* 结束状态，元素向上平移 0，不平移 */
+    }
+  }
+  /* ***************************设置一个图片渐入效果***************************** */
