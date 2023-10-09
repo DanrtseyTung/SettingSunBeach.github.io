@@ -1,0 +1,37 @@
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* 设置背景颜色 */
+    color: #c71d1d; /* 设置文字颜色 */
+    padding: 0px 0; /* 可根据需要调整内边距 */
+    box-shadow: 0px -5px 7px rgba(0, 0, 0, 0.5); /* 添加投影效果 */
+  }
+  
+  nav ul {
+    text-align: center;
+    margin-right: 5%;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+  nav ul li a {
+    letter-spacing: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: #000000; /* 鼠标悬停时的颜色 */
+    background-color: #de6819; /* 鼠标悬停时的底色 */
+  }
+  nav ul li a:active {
+    color: #ffffff; /* 点击后的颜色 */
+    background-color: #fb6327; /* 鼠标悬停时的底色 */
+  }

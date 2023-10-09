@@ -1,0 +1,189 @@
+body{
+    background-color: rgb(242, 242, 242);
+    width: auto;
+}
+#No1beijing{
+  height: 315px;
+  width: 100%;
+  margin: 0px;
+  background-image: url(https://i.postimg.cc/9QjTV6MF/2222.png);
+  background-size: cover; /* 图片以尽可能填满容器 */
+  background-repeat: no-repeat; /* 不重复平铺图片 */
+  background-position: center center; /* 图片居中显示 */
+  background-color: chartreuse;
+}
+h1{
+    text-align: center;
+    /* 让文字居中 */
+    font-family: fantasy;
+    /* 字体设置 */
+    font-size: 75px;
+    /* 字体大小 */
+    margin-top: 0px;
+    padding-top: 42px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-shadow: 4px 4px 0px rgba(-11, 250, 142, 0.573);
+    
+}
+h4{
+    text-align: center;
+    margin-top: -56px;
+    /* 设置文字外边距 */
+    letter-spacing: 3px;
+    /* 设置文字的字间距 */
+    font-style: italic;
+    /* 设置斜体 */
+    color: aliceblue;
+    text-shadow: 2px 2px 0px rgba(-11, 250, 142, 0.573);
+}
+
+#introduce{
+    text-align: center;
+    text-indent: 2em; /* 2个字符的宽度 */
+    padding: 5%;
+}
+#TOPimg{
+    text-align: center;
+    /* 让图片居中 */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* 隐藏图片的溢出部分 */
+}
+#TOPimg img {
+    max-width: 100%; /* 图片的最大宽度为 <div> 宽度的百分比 */
+    max-height: 100%; /* 图片的最大高度为 <div> 高度的百分比 */
+    height: auto; /* 使图片的高度自动适应宽度，以保持宽高比 */
+
+    /* ***************************设置一个图片渐入效果***************************** */
+    opacity: 0; /* 初始状态，元素不可见 */
+    transform: translateY(100px); /* 初始状态，元素向下平移 100px */
+    animation: fadeInUp 1s ease-in-out forwards, slideUp 1s ease-in-out forwards; /* 使用 fadeInUp 和 slideUp 动画 */
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0; /* 起始状态，元素透明度为 0 */
+      transform: translateY(100px); /* 起始状态，元素向下平移 100px */
+    }
+    100% {
+      opacity: 1; /* 结束状态，元素透明度为 1，完全显示 */
+      transform: translateY(0); /* 结束状态，元素向上平移 0，不平移 */
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100px); /* 起始状态，元素向下平移 100px */
+    }
+    100% {
+      transform: translateY(0); /* 结束状态，元素向上平移 0，不平移 */
+    }
+  }
+  /* ***************************设置一个图片渐入效果***************************** */
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* 设置背景颜色 */
+    color: #c71d1d; /* 设置文字颜色 */
+    padding: 0px 0; /* 可根据需要调整内边距 */
+    box-shadow: 0px -5px 7px rgba(0, 0, 0, 0.5); /* 添加投影效果 */
+  }
+  
+  nav ul {
+    text-align: center;
+    margin-right: 5%;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+  nav ul li a {
+    letter-spacing: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: #000000; /* 鼠标悬停时的颜色 */
+    background-color: #de6819; /* 鼠标悬停时的底色 */
+  }
+  nav ul li a:active {
+    color: #ffffff; /* 点击后的颜色 */
+    background-color: #fb6327; /* 鼠标悬停时的底色 */
+  }
+  /* ************************** */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    grid-template-rows: repeat(1, 1fr); /* 1行 */
+    gap: 10px; /* 图片之间的间距 */
+    max-width: 600px; /* 可根据需要调整最大宽度 */
+    margin: 0 auto; /* 居中显示 */
+  }
+  
+  .image {
+    overflow: hidden;
+    border: 1px solid #ccc; /* 图片边框样式，可根据需要调整 */
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 图片自适应填充容器 */
+  }
+
+  h2{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #KONGBAI{
+    background-color: #cffaf4;
+    height: 500px;
+    width: 100%;
+  }
+
+  .visualizer{
+    text-align: center;
+  }
+
+  /* 整体容器样式 */
+.content2 {
+  display: flex;
+}
+
+/* 文本容器样式 */
+.text {
+  flex: 1; /* 占据剩余宽度 */
+  padding: 20px;
+}
+.text p{
+  text-indent: 2em; /* 2个字符的宽度 */
+  text-align: justify; 
+  /* 让段落两边对齐 */
+}
+/* 图片容器样式 */
+.image2 {
+  flex: 1; /* 占据剩余宽度 */
+}
+
+/* 图片样式 */
+.image2 img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 33px;
+}
+
+h2{
+  color: #de6819;
+  text-align: left;
+  padding-left: 20px;
+}
